@@ -11,6 +11,15 @@ class LottoNumber : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lotto_number)
 
+        val instance = Calendar.getInstance()
+        val yearr = instance.get(Calendar.YEAR).toString() + "년 "
+        val monthh = (instance.get(Calendar.MONTH) + 1).toString() + "월 "
+        val datee = instance.get(Calendar.DATE).toString() + "일 "
+
+        year.setText(yearr)
+        month.setText(monthh)
+        date.setText(datee)
+
         var random1 = Random()
         var numberarray = mutableSetOf<Int>()
 

@@ -63,7 +63,6 @@
                 android:id="@+id/btn"
                 android:gravity="center"
                 android:padding="20sp"
-                android:background="@drawable/rounded_background"
                 android:backgroundTint="#99FFFFFF"
                 android:textSize="20sp"
                 android:layout_gravity="center"
