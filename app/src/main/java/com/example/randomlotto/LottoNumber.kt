@@ -2,6 +2,7 @@ package com.example.randomlotto
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import kotlinx.android.synthetic.main.activity_lotto_number.*
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
@@ -10,6 +11,8 @@ class LottoNumber : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lotto_number)
+
+
 
         val instance = Calendar.getInstance()
         val yearr = instance.get(Calendar.YEAR).toString() + "년 "
@@ -37,6 +40,14 @@ class LottoNumber : AppCompatActivity() {
             lottonumber2.append(lotto + "\n" + "\n")
 
             numberarray.clear()
+        }
+
+        var refresh = findViewById<SwipeRefreshLayout>(R.id.refresh)
+        refresh.setOnRefreshListener {
+
+            lottonumber2.setText("")
+            refresh.isRefreshing = false
+
         }
 
 
