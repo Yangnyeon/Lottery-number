@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RandomLotto">
         <activity
+            android:name=".Lotto_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="true" />
+        <activity
             android:name=".LottoNumber"
             android:exported="true" />
         <activity

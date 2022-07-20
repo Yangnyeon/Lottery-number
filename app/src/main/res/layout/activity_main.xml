@@ -70,6 +70,19 @@
                 android:layout_marginTop="40sp"
                 ></androidx.appcompat.widget.AppCompatButton>
 
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:text="테스트"
+                android:id="@+id/btn2"
+                android:gravity="center"
+                android:padding="20sp"
+                android:backgroundTint="#99FFFFFF"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40sp"
+                ></androidx.appcompat.widget.AppCompatButton>
+
 
 
 

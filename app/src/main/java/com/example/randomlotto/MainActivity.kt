@@ -26,5 +26,9 @@ class MainActivity : AppCompatActivity() {
             var intent = Intent(this, LottoNumber::class.java)
             startActivity(intent)
         }
+
+        btn2.setOnClickListener {
+            startActivity(Intent(this, Lotto_Activity::class.java))
+        }
     }
 }
