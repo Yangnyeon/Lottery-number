@@ -30,7 +30,7 @@
             <ImageView
                 android:layout_width="200sp"
                 android:layout_height="200sp"
-                android:src="@drawable/lotto1"
+                android:src="@drawable/lottoback"
                 android:layout_gravity="center"
                 android:layout_marginTop="150sp"
                 ></ImageView>
